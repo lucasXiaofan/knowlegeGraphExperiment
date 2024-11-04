@@ -1,0 +1,52 @@
+[
+  {
+    "timestamp": "2024-11-04T13:13:38.532399",
+    "query": "Hi Support Team,\n\nI get the message below after Pairing Successfully from my Visual Studio on my Windows Laptop:\nThe Xcode version installed on the Mac (15.4) is not compatible with this version of Visual Studio. This may cause unexpected warnings or errors when building and deploying iOS projects. Please install Xcode '16.0'. To download a specific version of Xcode, visit: https://developer.apple.com/downloads. If multiple versions of Xcode are installed on the Mac, you may specify which version to use under Tools -> Options -> Xamarin -> iOS Settings\n\nSimilarly, when trying to run the iOS Emulator, it subsequently errored with the following:\n \nThis version of Microsoft.iOS requires the iOS 18.0 SDK (shipped with Xcode 16.0). Either upgrade Xcode to get the required header files or set the managed linker behaviour to Link Framework SDKs Only in your project's iOS Build Options > Linker Behavior (to try to avoid the new APIs)\n\nThe recommended Xcode version for Microsoft.iOS 18.0.8303 is Xcode 16.0 or later. The current Xcode version (found in /Applications/Xcode.app/Contents/Developer) is 15.4. \n\nIs this something you can help with?\n\nRegards\nSamson",
+    "comments": "this is not correct, the correct article for this query should be \nHow to Utilize a Different Xcode Version for Build Process on MacinCloud Mac Servers\n\nhttps://support.macincloud.com/support/solutions/articles/8000042681-how-to-utilize-a-different-xcode-version-for-build-process-on-macincloud-mac-servers",
+    "results": [
+      {
+        "score": 0.8226501941680908,
+        "source": "article",
+        "title": "Error \"Xamarin.iOS version mismatch\" on Visual Studio for Windows",
+        "content": "If you are observing an error labelled \"Xamarin.iOS versions mismatch\" on your Visual Studio for Windows and you are not able to proceed with \"overwrite\" as suggested by the error message: This is because your local Visual Studio Xamarin version and remote Mac version is mismatching. Either your local Visual Studio for Windows needs update or your MacinCloud server need a more recent version of Xamarin.iOS SDK. Note this may involve acquiring a new server with a newer OS as more recent versions of Xamarin.iOS are only compatible with newer operating systems.\n\nUpdate Visual Studio\nUpdate your local Visual Studio for Windows to the latest version:\nOpen Visual Studio for Windows on your machine\nNavigate to the Help menu\nClick Check Update\nDownload and apply the latest Visual Studio update\nIf you continue to see a similar error on your local Visual Studio after applying the latest update, please contact our support staff.\n\nNote: If your MacinCloud Mac server has an earlier version of macOS that does not support the latest Xcode, you may need to switch to the latest macOS to access the latest Visual Studio for Mac and Xamarin components.",
+        "url": "https://support.macincloud.com/support/solutions/articles/8000072032-error-xamarin-ios-version-mismatch-on-visual-studio-for-windows",
+        "knowledge_id": null,
+        "creation_date": "None"
+      },
+      {
+        "score": 0.7827587127685547,
+        "source": "article",
+        "title": "Visual Studio 2019/2022 Xamarin Remote iOS Simulator Shows a Black Screen or Fails to Launch",
+        "content": "When initiating the Visual Studio Windows remote build iOS Simulator after 'Pair to Mac' has already successfully connected to the Mac, the iOS Simulator popup on the Windows side shows a black screen without any iOS interface display and icons. Alternatively, you may see an error message. This issue is a known issue reported on Microsoft Visual Studio Release Notes. To work around this, on Visual Studio Windows, go to Tools > Options, scroll down to 'Xamarin > iOS Settings', and uncheck the 'Remote Simulator to Windows' checkbox. This will cause the build result to show up on the Mac side in a popup iOS simulator, and the simulator will no longer appear on the Windows side. You can reverse this selection once a new Visual Studio Windows version resolves the issue.",
+        "url": "https://support.macincloud.com/support/solutions/articles/8000101076-visual-studio-2019-2022-xamarin-remote-ios-simulator-shows-a-black-screen-or-fails-to-launch",
+        "knowledge_id": null,
+        "creation_date": "None"
+      }
+    ]
+  },
+  {
+    "timestamp": "2024-11-04T13:15:36.076847",
+    "query": "Ensure compatibility between Visual Studio and Xcode 15.4 for iOS development.",
+    "comments": "after optimize the query the correct article appears but it is in result 5",
+    "results": [
+      {
+        "score": 0.7806062698364258,
+        "source": "article",
+        "title": "Error \"Xamarin.iOS version mismatch\" on Visual Studio for Windows",
+        "content": "If you are observing an error labelled \"Xamarin.iOS versions mismatch\" on your Visual Studio for Windows and you are not able to proceed with \"overwrite\" as suggested by the error message: This is because your local Visual Studio Xamarin version and remote Mac version is mismatching. Either your local Visual Studio for Windows needs update or your MacinCloud server need a more recent version of Xamarin.iOS SDK. Note this may involve acquiring a new server with a newer OS as more recent versions of Xamarin.iOS are only compatible with newer operating systems.\n\nUpdate Visual Studio\nUpdate your local Visual Studio for Windows to the latest version:\nOpen Visual Studio for Windows on your machine\nNavigate to the Help menu\nClick Check Update\nDownload and apply the latest Visual Studio update\nIf you continue to see a similar error on your local Visual Studio after applying the latest update, please contact our support staff.\n\nNote: If your MacinCloud Mac server has an earlier version of macOS that does not support the latest Xcode, you may need to switch to the latest macOS to access the latest Visual Studio for Mac and Xamarin components.",
+        "url": "https://support.macincloud.com/support/solutions/articles/8000072032-error-xamarin-ios-version-mismatch-on-visual-studio-for-windows",
+        "knowledge_id": null,
+        "creation_date": "None"
+      },
+      {
+        "score": 0.747061014175415,
+        "source": "article",
+        "title": "Visual Studio 2019/2022 Xamarin Remote iOS Simulator Shows a Black Screen or Fails to Launch",
+        "content": "When initiating the Visual Studio Windows remote build iOS Simulator after 'Pair to Mac' has already successfully connected to the Mac, the iOS Simulator popup on the Windows side shows a black screen without any iOS interface display and icons. Alternatively, you may see an error message. This issue is a known issue reported on Microsoft Visual Studio Release Notes. To work around this, on Visual Studio Windows, go to Tools > Options, scroll down to 'Xamarin > iOS Settings', and uncheck the 'Remote Simulator to Windows' checkbox. This will cause the build result to show up on the Mac side in a popup iOS simulator, and the simulator will no longer appear on the Windows side. You can reverse this selection once a new Visual Studio Windows version resolves the issue.",
+        "url": "https://support.macincloud.com/support/solutions/articles/8000101076-visual-studio-2019-2022-xamarin-remote-ios-simulator-shows-a-black-screen-or-fails-to-launch",
+        "knowledge_id": null,
+        "creation_date": "None"
+      }
+    ]
+  }
+]
